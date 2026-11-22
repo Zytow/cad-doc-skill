@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nx": {
+      "command": "uv",
+      "args": ["--directory", "<path to your siemens-nx-mcp checkout>", "run", "siemens-nx-mcp"]
+    }
+  }
+}

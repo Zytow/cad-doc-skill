@@ -1,0 +1,4 @@
+doc/*/cad/nx/
+nx/export/
+*.prt
+__pycache__/

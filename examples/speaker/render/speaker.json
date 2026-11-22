@@ -1,0 +1,226 @@
+{
+ "folder": "speaker",
+ "prefix": "spk-v1",
+ "stl_dir": "nx/export/speaker",
+ "parts": {
+  "shell": "print",
+  "baffle": "print_lid",
+  "back-cover": "print",
+  "cross-brace": "print",
+  "feet": "rubber",
+  "grille": "steel",
+  "woofer": "pa_black",
+  "tweeter": "pa_black",
+  "passive-radiator": "rubber",
+  "windows": "film",
+  "antenna": "pcb_green",
+  "amp-board": "pcb_green",
+  "pd-board": "pcb_green",
+  "cables": "pa_black",
+  "inserts": "gold"
+ },
+ "states": {
+  "explosion": {
+   "grille": [
+    0,
+    -230,
+    0
+   ],
+   "woofer": [
+    0,
+    -165,
+    0
+   ],
+   "tweeter": [
+    0,
+    -165,
+    0
+   ],
+   "baffle": [
+    0,
+    -85,
+    0
+   ],
+   "feet": [
+    0,
+    0,
+    -40
+   ],
+   "windows": [
+    0,
+    0,
+    70
+   ],
+   "antenna": [
+    0,
+    0,
+    45
+   ],
+   "cross-brace": [
+    0,
+    110,
+    0
+   ],
+   "amp-board": [
+    0,
+    190,
+    0
+   ],
+   "cables": [
+    0,
+    190,
+    0
+   ],
+   "passive-radiator": [
+    0,
+    255,
+    0
+   ],
+   "back-cover": [
+    0,
+    330,
+    0
+   ],
+   "pd-board": [
+    0,
+    330,
+    0
+   ]
+  }
+ },
+ "shots": [
+  {
+   "name": "product",
+   "az": -35,
+   "el": 22,
+   "margin": 0.8,
+   "hide": []
+  },
+  {
+   "name": "rear",
+   "az": 145,
+   "el": 22,
+   "margin": 0.8,
+   "hide": []
+  },
+  {
+   "name": "explosion",
+   "state": "explosion",
+   "az": -58,
+   "el": 16,
+   "margin": 0.62,
+   "lens": 60,
+   "hide": []
+  },
+  {
+   "name": "explosion-line",
+   "state": "explosion",
+   "style": "line",
+   "az": -58,
+   "el": 16,
+   "margin": 0.62,
+   "lens": 60,
+   "hide": []
+  }
+ ],
+ "sheet": {
+  "title": "Bluetooth speaker V1",
+  "subtitle": "Exploded view",
+  "drawing_no": "SPK-V1-EXP-01",
+  "author": "cad-doc-skill example",
+  "date": "2026-11-22",
+  "accent": "#D62F2F",
+  "bom": [
+   {
+    "part": "grille",
+    "label": "Grille",
+    "qty": 1,
+    "material": "perforated sheet"
+   },
+   {
+    "part": "woofer",
+    "label": "Woofer",
+    "qty": 1,
+    "material": "purchased"
+   },
+   {
+    "part": "tweeter",
+    "label": "Tweeter",
+    "qty": 1,
+    "material": "purchased"
+   },
+   {
+    "part": "baffle",
+    "label": "Baffle",
+    "qty": 1,
+    "material": "printed"
+   },
+   {
+    "part": "shell",
+    "label": "Shell",
+    "qty": 1,
+    "material": "printed"
+   },
+   {
+    "part": "inserts",
+    "label": "M4 threaded inserts",
+    "qty": 16,
+    "material": "brass"
+   },
+   {
+    "part": "feet",
+    "label": "Feet",
+    "qty": 4,
+    "material": "rubber"
+   },
+   {
+    "part": "windows",
+    "label": "Top windows",
+    "qty": 2,
+    "material": "acrylic"
+   },
+   {
+    "part": "antenna",
+    "label": "Antenna",
+    "qty": 1,
+    "material": "PCB"
+   },
+   {
+    "part": "cross-brace",
+    "label": "Cross brace",
+    "qty": 1,
+    "material": "printed"
+   },
+   {
+    "part": "amp-board",
+    "label": "Amplifier board",
+    "qty": 1,
+    "material": "purchased"
+   },
+   {
+    "part": "cables",
+    "label": "Cabling",
+    "qty": 3,
+    "material": "copper"
+   },
+   {
+    "part": "passive-radiator",
+    "label": "Passive radiator",
+    "qty": 1,
+    "material": "purchased"
+   },
+   {
+    "part": "back-cover",
+    "label": "Back cover",
+    "qty": 1,
+    "material": "printed"
+   },
+   {
+    "part": "pd-board",
+    "label": "Power-delivery board",
+    "qty": 1,
+    "material": "PCB"
+   }
+  ]
+ }
+}
