@@ -14,7 +14,7 @@ A typical session for one assembly.
 
 ## Exploded drawing
 
-Add a `"style": "line"` shot with an explosion state to the render configuration and a `sheet` block with the parts list, render it, then run `python tools/callouts.py tools/render/<assembly>.json <shot>`. The renderer writes the screen position of every part next to the image; `callouts.py` places numbered balloons above and below and builds the table. For parts whose bounding-box centre is hidden behind others, give a point in `"anchors"` in the shot.
+Add a `"style": "line"` shot with an explosion state to the render configuration and a `sheet` block with the parts list, render it, then run `python tools/callouts.py tools/render/<assembly>.json <shot>`. The renderer writes the screen position of every part next to the image; `callouts.py` places numbered balloons above and below and builds the table. For parts whose bounding-box centre is hidden behind others, give the leader end in `sheet.anchor_px` (pixels of the line rendering).
 
 ## Rules and generations
 

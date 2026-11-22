@@ -15,6 +15,7 @@ and the "sheet" block of the render configuration:
       "author": "Name",
       "date": "2026-11-22",
       "accent": "#D62F2F",
+      "anchor_px": {"shell": [1150, 1120]},   # optional: leader end per part, pixels of the line rendering
       "bom": [ {"part": "grille", "label": "Grille", "qty": 1, "material": "perforated steel"}, ... ]
     }
 
@@ -140,7 +141,11 @@ def main():
         head = f.read(24)
     img_w, img_h = unpack(">II", head[16:24])
     scale = img_w / data["width"]
-    anchors = [{"name": a["name"], "x": a["x"] * scale, "y": a["y"] * scale} for a in data["anchors"]]
+    override = cfg["sheet"].get("anchor_px", {})  # part -> [x, y] in pixels of the line rendering
+    anchors = []
+    for a in data["anchors"]:
+        x, y = override.get(a["name"], (a["x"], a["y"]))
+        anchors.append({"name": a["name"], "x": x * scale, "y": y * scale})
     page = build_html(png, img_w, img_h, anchors, cfg["sheet"])
     out = out or base.parent / f"{cfg['prefix']}-{shot}-sheet.png"
     width = img_w + 2 * MARGIN

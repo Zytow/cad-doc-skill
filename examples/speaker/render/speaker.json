@@ -93,14 +93,14 @@
    "name": "product",
    "az": -35,
    "el": 22,
-   "margin": 0.8,
+   "margin": 1.3,
    "hide": []
   },
   {
    "name": "rear",
    "az": 145,
    "el": 22,
-   "margin": 0.8,
+   "margin": 1.3,
    "hide": []
   },
   {
@@ -221,6 +221,28 @@
     "qty": 1,
     "material": "PCB"
    }
-  ]
+  ],
+  "anchor_px": {
+   "shell": [
+    1150,
+    1124
+   ],
+   "inserts": [
+    1456,
+    1261
+   ],
+   "feet": [
+    1121,
+    1384
+   ],
+   "back-cover": [
+    240,
+    760
+   ],
+   "cross-brace": [
+    1540,
+    702
+   ]
+  }
  }
 }
